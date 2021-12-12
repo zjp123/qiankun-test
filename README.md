@@ -13,3 +13,13 @@ Start the dev server,
 ```bash
 $ yarn start
 ```
+
+```
+install 以后直接start即可
+
+直接npm start 即可
+子应用需要安装 @umijs/plugin-qiankun
+
+主应用不仅需要安装@umijs/plugin-qiankun  还需要安装qiankun 依赖 npm i -S qiankun
+
+```
