@@ -10,6 +10,9 @@ export default defineConfig({
   layout: {
     locale: false,
   },
+  dva: {
+    lazyLoad: true,
+  },
   locale: {},
   // name: 'qiankuntestmain',
   // publicPath: '//',
