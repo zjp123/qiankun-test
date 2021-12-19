@@ -24,6 +24,8 @@ install 以后直接start即可
 
 主子应用通信： useQiankunStateForSlave 这种方法只适用于 主应用初始化时给子应用 传递数据，后面就不能 主动的改变数据了---不太好这种方式
 
+useQiankunStateForSlave 这个方法只能是同步，不能是异步
+
 
 
 
