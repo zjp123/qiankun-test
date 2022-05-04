@@ -1,5 +1,6 @@
 import { defineConfig } from 'umi';
 import routes from './routes';
+// import store from './store';
 export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
@@ -7,9 +8,9 @@ export default defineConfig({
   fastRefresh: {},
   base: '/', // 不能为空
   routes: routes,
-  layout: {
-    locale: false,
-  },
+  // layout: {
+  //   locale: false,
+  // },
   dva: {
     lazyLoad: true,
   },
@@ -27,16 +28,26 @@ export default defineConfig({
   qiankun: {
     // slave: {},
     master: {
+      sandbox: { experimentalStyleIsolation: true },
       // 注册子应用信息
       apps: [
         {
           name: 'app1', // 唯一 id
+          props: {
+            zidingyi: 'zidingyi',
+            // parentStore: store
+          },
           entry: '//localhost:7001', // html entry
         },
-        // {
-        //   name: 'app2', // 唯一 id
-        //   entry: '//localhost:7002', // html entry
-        // },
+        {
+          name: 'micvue2', // 唯一 id
+          // 传入初始化参数，也可以是store
+          props: {
+            zidingyi: 'zidingyi',
+            // parentStore: store
+          },
+          entry: '//localhost:7002', // html entry
+        },
       ],
     },
   },

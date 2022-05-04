@@ -6,11 +6,6 @@ export default class LayoutCom extends React.Component {
   }
 
   render() {
-    return (
-      <h2>
-        这是layout页面主应用
-        {this.props.children}
-      </h2>
-    );
+    return <h2>这是主应用layout页面</h2>;
   }
 }

@@ -4,7 +4,7 @@ export function App222() {
   return (
     <div>
       <div>
-        <MicroApp name="app2" autoSetLoading />
+        <MicroApp name="micvue2" autoSetLoading />
       </div>
     </div>
   );

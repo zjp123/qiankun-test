@@ -1,7 +1,7 @@
 export default [
   {
     path: '/',
-    component: '@/pages/layout',
+    component: '@/pages/index',
     routes: [
       // {
       //   path: '/',
@@ -27,6 +27,17 @@ export default [
           autoSetLoading: true,
           className: 'myContainer',
           wrapperClassName: 'myWrapper',
+        },
+      },
+      {
+        path: '/micvue2',
+        microApp: 'micvue2',
+        name: 'micvue2',
+        // 路由模式下，你可以这样设置一些静态配置开启 loading 动画：
+        microAppProps: {
+          autoSetLoading: true,
+          className: 'vueContainer',
+          wrapperClassName: 'vueWrapper',
         },
       },
       // {

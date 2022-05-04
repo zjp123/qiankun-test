@@ -8,7 +8,7 @@ export default {
           entry: '//localhost:7001', // html entry
         },
         {
-          name: 'app2', // 唯一 id
+          name: 'micvue2', // 唯一 id
           entry: '//localhost:7002', // html entry
         },
       ],
